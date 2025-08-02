@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Navbar from './Components/Navbar'
 import PokemonCard from "./Components/PokemonCard";
 
 function App() {
@@ -26,9 +25,9 @@ function App() {
   
   return (
     <>
-      <Navbar />
       <div className="min-h-screen p-8 bg-gradient-to-br from-sky-300 to-sky-300">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <h1 className="text-white text-6xl font-serif text-center mb-10">Pokémon</h1>
+        <div className="max-w-8xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {pokemons.map(pokemon => (
             <PokemonCard key={pokemon.id} pokemon={pokemon} />
           ))}
