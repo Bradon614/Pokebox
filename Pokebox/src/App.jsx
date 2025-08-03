@@ -15,6 +15,11 @@ function App() {
           name: data.name.charAt(0).toUpperCase() + data.name.slice(1),
           image: data.sprites.other["official-artwork"].front_default,
           types: data.types.map(t => t.type.name),
+          stats: {
+            hp: data.stats[0].base_stat,
+            attack: data.stats[1].base_stat,
+            defense: data.stats[2].base_stat,
+          }
         });
       }
       setPokemons(fetched);
