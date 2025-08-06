@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PokemonCard from "../components/Pokemoncard";
+import PokemonCard from "../Components/PokemonCard";
 
 const Home = () => {
   const [pokemons, setPokemons] = useState([]);
